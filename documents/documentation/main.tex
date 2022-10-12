@@ -1,0 +1,86 @@
+\documentclass[12pt, oneside, a4paper]{book}
+
+% Set input encoding
+\usepackage[utf8]{inputenc}
+% For coloured text and backgrounds
+\usepackage[table, xcdraw]{xcolor}
+% To create compact lists
+\usepackage{paralist}
+% To get current date and time
+\usepackage{datetime}
+% To include graphics
+\usepackage{graphicx}
+% To allow for easier positioning of graphics
+\usepackage[export]{adjustbox}
+% Nested Lists
+\usepackage{outlines}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left={35mm},
+    top={25mm},
+    right={25mm},
+    marginparwidth={0cm},
+}
+% Place figures where they are supposed to be placed
+\usepackage{float}
+
+% Change the Space before Chapters
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{50\p@}}{}{}{}%
+\patchcmd{\@makeschapterhead}{\vspace*{50\p@}}{}{}{}%
+\makeatother
+
+%Command to add Signatures
+\newcommand*{\SignatureAndDate}[1]{%
+    \par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}%
+    \par\noindent\makebox[2.5in][l]{#1}      \hfill\makebox[2.0in][l]{Date}%
+}%
+
+\hypersetup{
+    pdfauthor = {Gianluca Nenz, Ronny Mueller, Thomas Kleb}
+    pdftitle = {Studienarbeit HS22}
+}
+
+\begin{document}
+
+% The header is empty; the footer contains the page number.
+\pagestyle{plain}
+
+% Changes numbering to lowercase roman.
+\frontmatter
+
+
+% Title Page
+\include{title-page.tex}
+\include{abstract.tex}
+
+%Sets the Depth of the ToC (set to 2 to allow subsections)
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+
+\mainmatter
+
+
+\include{01_Project-Idea/project-idea.tex}
+
+\include{02_Mgmt-Summary/management-summary.tex}
+
+\include{03_Product-Documentation/product-documentation.tex}
+
+\include{04_Project-Documentation/project-documentation.tex}
+
+\include{05_Meetings/meetings.tex}
+
+
+\backmatter
+
+
+\include{99_Glossary-and-Appendix/glossary-and-references.tex}
+
+\include{99_Glossary-and-Appendix/appendix.tex}
+
+\end{document}
