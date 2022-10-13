@@ -26,6 +26,17 @@
 % Place figures where they are supposed to be placed
 \usepackage{float}
 
+% To add caption and labels to the tables
+\usepackage{booktabs}
+\usepackage{caption2}
+
+\renewcommand{\listfigurename}{\section{Illustration Directory}}
+\renewcommand{\listtablename}{\section{Table Directory}}
+
+% To allow multiple columns in itemize
+\usepackage{multicol}
+\setlength{\columnsep}{5pt}
+
 % Change the Space before Chapters
 \usepackage{etoolbox}
 \makeatletter
