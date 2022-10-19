@@ -6,4 +6,4 @@ This Repository is the central Hub for our work in our "Studienarbeit".
 |Date|Goal|
 |---|---|
 |13.10|Defined Problem Domains and created a "Lernkonzept"|
-|???|-|
+|20.10|Lab Concepts + GANTT Diagram|
