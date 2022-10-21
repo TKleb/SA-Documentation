@@ -4,8 +4,6 @@ build:
   script:
     - cd documents/documentation
     - pdflatex main.tex
-    - bibtex main
-    - pdflatex main.tex
   after_script:
     - cat documents/documentation/main.log
   artifacts:
