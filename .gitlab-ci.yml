@@ -1,0 +1,13 @@
+image: registry.gitlab.com/islandoftex/images/texlive:latest
+
+build:
+  script:
+    - cd documents/documentation
+    - pdflatex main.tex
+    - bibtex main
+    - pdflatex main.tex
+  after_script:
+    - cat documents/documentation/main.log
+  artifacts:
+    paths:
+      - documents/documentation/main.pdf
