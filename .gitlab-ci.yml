@@ -1,5 +1,9 @@
 image: registry.gitlab.com/islandoftex/images/texlive:latest
 
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
 build:
   script:
     - cd documents/documentation
