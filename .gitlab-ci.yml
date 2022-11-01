@@ -1,0 +1,18 @@
+image: registry.gitlab.com/islandoftex/images/texlive:latest
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_MESSAGE =~ /-draft$/
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+build:
+  script:
+    - cd documents/documentation
+    - pdflatex main.tex
+  after_script:
+    - cat documents/documentation/main.log
+  artifacts:
+    paths:
+      - documents/documentation/main.pdf
