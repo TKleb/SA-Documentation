@@ -18,6 +18,10 @@
 *.lot
 *.lof
 *.pdf
+*.xml
+*.bbl
+*.bcf
+*.blg
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
