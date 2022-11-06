@@ -11,7 +11,22 @@ Advisor:
 - 
 
 Studenten:
-- 
+ - Remote-exploit Lab fertig
+   - Docker-Compose File
+   - MD Files Struktur
+   - MD File Overview angepasst mit Ports nach ECSC
+   - Steps schreiben
+ - Alte Labs anpassen
+   - MD Struktur und Feedback
+ - RE Attempts
+   - Pyinstaller Programm austauschen
+   - CS Programm fix
+   - C Programm zweiter Schwierigkeitsgrad
+ - POC für PWN Lab
+ - Alle alte Mails sichten/durchschauen
+
+## Repeating Tasks
+ - Jeden Mittwoch Abend Aktuelle Dokumentation schicken
 
 ## Präsentation
     Deliverables: IDA Paket (Installationsanleitung)
@@ -69,18 +84,4 @@ Ein Lab zu Pwn (Library) Buffer Overflow (Python)
 tinyc.c (Zusätzliche Schwierigkeiten)
 
 ## Ziele
- - Remote-exploit Lab fertig
-   - Docker-Compose File
-   - MD Files Struktur
-   - MD File Overview angepasst mit Ports nach ECSC
-   - Steps schreiben
- - Alte Labs anpassen
-   - MD Struktur und Feedback
- - RE Attempts
-   - Pyinstaller Programm austauschen
-   - CS Programm fix
-   - C Programm zweiter Schwierigkeitsgrad
- - POC für PWN Lab
  - (Installationsanleitung IDA)
- - Jeden Mittwoch Abend Aktuelle Dokumentation schicken
- - Alle alte Mails sichten/durchschauen
