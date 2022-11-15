@@ -23,9 +23,6 @@
 *.blg
 *.xml
 
-documents/documentation/out/*
-
-
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
