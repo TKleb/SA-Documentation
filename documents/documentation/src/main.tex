@@ -27,6 +27,7 @@
     top={25mm},
     right={25mm},
     marginparwidth={0cm},
+    headheight={15pt}
 }
 % Place figures where they are supposed to be placed
 \usepackage{float}
@@ -69,10 +70,16 @@
     pdftitle = {Studienarbeit HS22}
 }
 
-\begin{document}
+% Header and Footer Styling
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{G.Nenz, R. Mueller, T.Kleb}
+\fancyfoot[C]{\thepage}
 
-% The header is empty; the footer contains the page number.
-\pagestyle{plain}
+
+\begin{document}
 
 % Changes numbering to lowercase roman.
 \frontmatter
