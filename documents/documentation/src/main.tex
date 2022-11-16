@@ -36,6 +36,15 @@
 \usepackage{booktabs}
 \usepackage{caption2}
 
+% Imports biblatex package for citing in IEEE standard
+% cite with \cite{title}
+\usepackage[
+    style=ieee,
+    backend=bibtex
+]{biblatex}
+% Import bibliography file
+\addbibresource{../out/references.bib}
+
 \renewcommand{\listfigurename}{\section{Illustration Directory}}
 \renewcommand{\listtablename}{\section{Table Directory}}
 
