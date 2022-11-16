@@ -1,3 +1,39 @@
+\subsection{Tools Introduction: GDB}
+\subsubsection*{Content}
+This Introduction is used to explain the basic functionalities of the tool used in some of the labs. In this case GDB (GNU Debugger).
+\subsubsection*{Choice of Topic}
+The solutions and tipps in the labs are given via screenshots or explanations. If a student wants to use a different tool he / she is free to do so. It is important that the tools used in the example solutions are known to the students. This makes it easier for them to understand each step and, if they are stuck at any point, follow the intructions on how to solve it. 
+\subsubsection*{Objectives}
+\begin{itemize}
+    \item Learn about GDB and how to use the different commands availabale
+\end{itemize}
+\subsubsection*{Grading}
+The Labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
+
+\subsection{Tools Introduction: x64dbg}
+\subsubsection*{Content}
+Because most students have probably never touched a dynamic debugger on Windows before, this labe will help getting their feet wet with one of the most widely used ones by professionals.
+This lab also acts as the basis for the upcoming labs where x64dbg will be used.
+\subsubsection*{Choice of Topic}
+Students working with Windows should also be given the opportunity to use a debugger. This lab will guide them through the GUI of the program and explain the basic functionality of what is coming up in future labs.
+\subsubsection*{Objectives}
+\begin{itemize}
+    \item Install x64dbg and get a brief overview
+    \item Get to know the functionality of x64dbg and be ready to use it on a binary
+\end{itemize}
+\subsubsection*{Grading}
+The introduction labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
+
+\subsection{Tools Introduction: IDA Freeware}
+\subsubsection*{Content}
+Lorem Ipsum
+\subsubsection*{Choice of Topic}
+Lorem Ipsum
+\subsubsection*{Objectives}
+Lorem Ipsum
+\subsubsection*{Grading}
+Lorem Ipsum
+
 \subsection{Lab 1: Refresher}
 \subsubsection*{Content}
 Lorem Ipsum
@@ -62,13 +98,19 @@ The student has to solve both binaries to get a flag
 
 \subsection{Lab 6: Remote Login}
 \subsubsection*{Content}
-Lorem Ipsum
+This lab dives deeper into the reverse engineering rabbit hole and introduces a new concept. The student first starts a docker container off a provided ressource.
+This docker container exposes a webserver and a port where an application runs. The application running on the server can be downloaded from the servers website by the student. \\
+The student then has to combine dynamic and static reverse engineering to figure out the password in order to log into the server and expose the flag.
 \subsubsection*{Choice of Topic}
-Lorem Ipsum
+Giving the students an idea that reverse engineering can be used to gather information that you can later exploit on a target system.
 \subsubsection*{Objectives}
-Lorem Ipsum
+\begin{itemize}
+    \item Learn to use the tools you got introduced to
+    \item Apply basics of dynamic and static debugging
+    \item Use gatherd knowledge to exploit remote target
+\end{itemize}
 \subsubsection*{Grading}
-Lorem Ipsum
+The student has to find out the flag and submit a small writeup to answer the security questions provided.
 
 \subsection{Lab 7: Pwntools - Introduction}
 \subsubsection*{Content}
