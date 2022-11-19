@@ -17,7 +17,6 @@ Studenten:
 - Testing Labs / Feedback einbauen
 - GANTT-Diagramm anpassen
 - Refresher
-- First Keygen
 - Konzept von letztem Labs
 
 
@@ -42,7 +41,6 @@ Text in Dokumentation immer neutral halten. (Nicht persönlich)
 Kryptographisches Crackme (rechnen) Challenge
 
 Ideen:
-- First Keygen POC
 - Kryptographisches Crackme
 - Refresher Lab (Assembly programmieren?: https://www.youtube.com/watch?v=HgEGAaYdABA)
 
