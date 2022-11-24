@@ -1,3 +1,4 @@
+% ------------------------------------------ INTRODUCTIONS ------------------------------------------ %
 \subsection{Tools Introduction: GDB}
 \subsubsection*{Content}
 This Introduction is used to explain the basic functionalities of the tool used in some of the labs. In this case GDB (GNU Debugger).
@@ -9,6 +10,7 @@ The solutions and tipps in the labs are given via screenshots or explanations. I
 \end{itemize}
 \subsubsection*{Grading}
 The Labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
+
 
 \subsection{Tools Introduction: x64dbg}
 \subsubsection*{Content}
@@ -24,6 +26,7 @@ Students working with Windows should also be given the opportunity to use a debu
 \subsubsection*{Grading}
 The introduction labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
 
+
 \subsection{Tools Introduction: IDA Freeware}
 \subsubsection*{Content}
 This introduction explains all the relevant functionalities of IDA and how to install it.
@@ -37,6 +40,8 @@ Students need this software (or a similiar one) to be able to solve our challeng
 \subsubsection*{Grading}
 The introduction labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
 
+% ------------------------------------------ LABS ------------------------------------------ %
+
 \subsection{Lab 1: Refresher}
 \subsubsection*{Content}
 Lorem Ipsum
@@ -47,6 +52,7 @@ Lorem Ipsum
 \subsubsection*{Grading}
 Lorem Ipsum
 
+
 \subsection{Lab 2: Introduction into Reverese Engineering}
 \subsubsection*{Content}
 Lorem Ipsum
@@ -56,6 +62,7 @@ Lorem Ipsum
 Lorem Ipsum
 \subsubsection*{Grading}
 Lorem Ipsum
+
 
 \subsection{Lab 3: Static Debugging}
 \subsubsection*{Content}
@@ -70,6 +77,7 @@ Program execution starts from the main() function which is why it is an importan
 \end{itemize}
 \subsubsection*{Grading}
 The student has to inspect the main functions and find a flag in both of them. The final hand-in will be the combined flag.
+
 
 \subsection{Lab 4: Dynamic Debugging}
 \subsubsection*{Content}
@@ -86,6 +94,7 @@ Next to static debugging, dynamic debugging is used in a wide range of reverse e
 \subsubsection*{Grading}
 The student has to use the newly aquired skills to find the flag in a new binary using dynamic debugging skills.
 
+
 \subsection{Lab 5: First Reversing Attempts}
 \subsubsection*{Content}
 In this lab the student will deepen their knowledge of reversing binaries to find out how they work. This challenge contains 2 binaries in which you have a requirement which has to be met to recieve the flag.
@@ -98,6 +107,7 @@ It is important to test the understanding of the programs used in an environment
 \end{itemize}
 \subsubsection*{Grading}
 The student has to solve both binaries to get a flag
+
 
 \subsection{Lab 6: Remote Login}
 \subsubsection*{Content}
@@ -115,15 +125,30 @@ Giving the students an idea that reverse engineering can be used to gather infor
 \subsubsection*{Grading}
 The student has to find out the flag and submit a small writeup to answer the security questions provided.
 
+
 \subsection{Lab 7: Pwntools - Introduction}
 \subsubsection*{Content}
-
+In this lab the student has a first introduction into the pwntool module of python. The student first has to start a docker conatiner from the provided ressrouce. This docker exposes both a webserver and a port where the application is running on. The student downloads the compiled application to analyze it and search for a weakness to exploit. This weakness can then be exploited through the use of pwntools. Since this is a first introduction, the whole process of creating the script is guided as a walkthrough.
 \subsubsection*{Choice of Topic}
-
+Pwntools is an important module to learn for exploiting. Reverse engineering in general is used as a means to find vulnerabilities to exploit, which means it is important for a student to not only know how to find the weakness but also how to exploit it.
 \subsubsection*{Objectives}
 \begin{itemize}
     \item Use aquired skills to find vulnerability in binary
     \item Create a pwntools script to exploit that vulnerabilty
 \end{itemize}
 \subsubsection*{Grading}
-Lorem Ipsum
+The grading is done by sending in the printed out flag when the script is run on the exposed port.
+
+\subsection{Lab 8: Crypto Lab - AES ECB}
+\subsubsection*{Content}
+The student is presented a docker container which runs a webserver and exposes a port on which the script is running which the student has to crack. The student first inspects and analyzes the script itself and then follows a walkthrough on how to write a simple script which exploits a common vulnerability in AES ECB mode. 
+\subsubsection*{Choice of Topic}
+Encryption is a widely used form of obfuscation. Because of this it is important as a cyber security student to be informed about certain weaknesses these ciphers have and how to exploit them if needed. 
+\subsubsection*{Objectives}
+\begin{itemize}
+    \item Find out how the script works
+    \item Find patterns to exploit
+    \item Create a pwntools script to crack the encryption
+\end{itemize}
+\subsubsection*{Grading}
+The grading is done by sending in the printed out flag when the script is run on the exposed port.
