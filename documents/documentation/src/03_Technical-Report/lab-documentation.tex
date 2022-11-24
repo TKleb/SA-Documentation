@@ -42,29 +42,20 @@ The introduction labs are not graded since they are only used as a lookup. They 
 
 % ------------------------------------------ LABS ------------------------------------------ %
 
-\subsection{Lab 1: Refresher}
+\subsection{Lab 1: Asm-Refresher}
 \subsubsection*{Content}
-Lorem Ipsum
+This lab is designed to be a refresher for those who have not done anything assembly related in a while. It covers the basic assembly instructions, explains the General-Purpose Registers and rounds up with a guide on how to write a "Hello World" program.  
 \subsubsection*{Choice of Topic}
-Lorem Ipsum
+A reverse engineer has to understand the basic concepts of assembly. Not only when reading through dissasembled code but also later on when automatic pseudo code generation fails.
 \subsubsection*{Objectives}
-Lorem Ipsum
+\begin{itemize}
+    \item Refresh knowledge about the General-Purpose Registers.
+    \item Basic understanding of assembly instructions
+\end{itemize}
 \subsubsection*{Grading}
-Lorem Ipsum
+This lab will not be graded since it is meant to help the students in later labs if they struggle with assembly.
 
-
-\subsection{Lab 2: Introduction into Reverese Engineering}
-\subsubsection*{Content}
-Lorem Ipsum
-\subsubsection*{Choice of Topic}
-Lorem Ipsum
-\subsubsection*{Objectives}
-Lorem Ipsum
-\subsubsection*{Grading}
-Lorem Ipsum
-
-
-\subsection{Lab 3: Static Debugging}
+\subsection{Lab 2: Static Debugging}
 \subsubsection*{Content}
 In this lab the student will learn how to use IDA Freeware to statically reverse a given binary. The goal is to find the main function of the both a normal binary and one with the symbols stripped. \\
 This will confront the student with a problem that has to be solved and to do that the student has to understand the inner workings of the binary by reading the assembly code and not just relying on the GUI of the decompiling program.
@@ -79,7 +70,7 @@ Program execution starts from the main() function which is why it is an importan
 The student has to inspect the main functions and find a flag in both of them. The final hand-in will be the combined flag.
 
 
-\subsection{Lab 4: Dynamic Debugging}
+\subsection{Lab 3: Dynamic Debugging}
 \subsubsection*{Content}
 In this lab the student will learn how to use GDB and x64dbg to dynamically reverse a given binary. In a first step the lab explains how to dynamically debug the binary given in Lab 3 and then, in a second step, the student will be presented with a new binary conataining a flag. \\
 The goal of this lab is to show the student how this skill is used and then have him do it on his own to solidify the steps he has compleated before.
@@ -95,7 +86,7 @@ Next to static debugging, dynamic debugging is used in a wide range of reverse e
 The student has to use the newly aquired skills to find the flag in a new binary using dynamic debugging skills.
 
 
-\subsection{Lab 5: First Reversing Attempts}
+\subsection{Lab 4: First Reversing Attempts}
 \subsubsection*{Content}
 In this lab the student will deepen their knowledge of reversing binaries to find out how they work. This challenge contains 2 binaries in which you have a requirement which has to be met to recieve the flag.
 \subsubsection*{Choice of Topic}
@@ -109,7 +100,7 @@ It is important to test the understanding of the programs used in an environment
 The student has to solve both binaries to get a flag
 
 
-\subsection{Lab 6: Remote Login}
+\subsection{Lab 5: Remote Login}
 \subsubsection*{Content}
 This lab dives deeper into the reverse engineering rabbit hole and introduces a new concept. The student first starts a docker container off a provided ressource.
 This docker container exposes a webserver and a port where an application runs. The application running on the server can be downloaded from the servers website by the student. \\
@@ -126,7 +117,7 @@ Giving the students an idea that reverse engineering can be used to gather infor
 The student has to find out the flag and submit a small writeup to answer the security questions provided.
 
 
-\subsection{Lab 7: Pwntools - Introduction}
+\subsection{Lab 6: Pwntools - Introduction}
 \subsubsection*{Content}
 In this lab the student has a first introduction into the pwntool module of python. The student first has to start a docker conatiner from the provided ressrouce. This docker exposes both a webserver and a port where the application is running on. The student downloads the compiled application to analyze it and search for a weakness to exploit. This weakness can then be exploited through the use of pwntools. Since this is a first introduction, the whole process of creating the script is guided as a walkthrough.
 \subsubsection*{Choice of Topic}
@@ -139,7 +130,7 @@ Pwntools is an important module to learn for exploiting. Reverse engineering in 
 \subsubsection*{Grading}
 The grading is done by sending in the printed out flag when the script is run on the exposed port.
 
-\subsection{Lab 8: Crypto Lab - AES ECB}
+\subsection{Lab 7: Crypto Lab - AES ECB}
 \subsubsection*{Content}
 The student is presented a docker container which runs a webserver and exposes a port on which the script is running which the student has to crack. The student first inspects and analyzes the script itself and then follows a walkthrough on how to write a simple script which exploits a common vulnerability in AES ECB mode. 
 \subsubsection*{Choice of Topic}
