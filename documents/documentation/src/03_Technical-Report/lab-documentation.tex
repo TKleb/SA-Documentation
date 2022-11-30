@@ -130,6 +130,7 @@ Pwntools is an important module to learn for exploiting. Reverse engineering in 
 \subsubsection*{Grading}
 The grading is done by sending in the printed out flag when the script is run on the exposed port.
 
+
 \subsection{Lab 7: Crypto Lab - AES ECB}
 \subsubsection*{Content}
 The student is presented a docker container which runs a webserver and exposes a port on which the script is running which the student has to crack. The student first inspects and analyzes the script itself and then follows a walkthrough on how to write a simple script which exploits a common vulnerability in AES ECB mode. 
@@ -143,3 +144,19 @@ Encryption is a widely used form of obfuscation. Because of this it is important
 \end{itemize}
 \subsubsection*{Grading}
 The grading is done by sending in the printed out flag when the script is run on the exposed port.
+
+
+\subsection{Lab 8: Patching Lab}
+\subsubsection*{Content}
+The student is presented a binary which doesn't output correctly. The student is tasked to find the location to patch and fix it. To check if it now works the student uploads it to the in docker running webserver and interacts with it. There are three options: Patch, which updates the running file ; Test, which runs the file and gives the student the output of the docker ; Reset, which resets the the file to restart the lab. 
+\subsubsection*{Choice of Topic}
+For a Reverse Engineer it is important to have the knowledge on how to find errors and how to fix them. This lab shows the student how to find errors, change them and patch it into the old file.
+\subsubsection*{Objectives}
+\begin{itemize}
+    \item Find the mistake of the binary
+    \item Change the ASM code
+    \item Patch the file
+    \item Interpret output
+\end{itemize}
+\subsubsection*{Grading}
+The grading will be done via a writeup and a flag.
