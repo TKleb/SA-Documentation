@@ -4,30 +4,28 @@ For this project, the ”Project Management Triangle” is lacking the cost dime
 \subsection{Estimated Risks}
 
 \subparagraph{General Risks}
-\begin{itemize}
-    \item Finding Testing Participants (severity: medium, probability: high)\\ 
-    \textbf{Mitigations:} Early looking for backup person \\ 
-    \textbf{Actions taken:} Found backup person\\ 
-    \textbf{New probability:} low
-    \item Being able to create reverseable Programs with additional difficulties. (severity: very high, probability: medium)\\ 
-    \textbf{Mitigations:} being able to ask Ivan \\ 
-    \textbf{Actions taken:} Asked for possible help\\ 
-    \textbf{New probability:} low
-    \item Spending too much time on programming. (severity: high, probability: low)\\ 
-    \textbf{Mitigations:} Define maximum time spending on creating a lab.
-    \item Not enough time for the actual labs because of too much programming etc. (severity: very high, probability: medium)\\
-    \textbf{Mitigations:} Creating the Labs in chronological order and in a iterating fashion
-    \item Irreparable corruption of git server. (severity: very high, probability: low)\\ 
-    \textbf{Mitigations:} Weekly off-site git server backups\\
-    \textbf{Actions taken:} Repository mirrored to GitHub\\ 
-    \textbf{New severity:} low
-    \item Lost work due to un-pushed work. (severity: low, probability: high)\\ 
-    \textbf{Mitigations:} Frequent reminders to push changes by Scrum Master / Team\\
-\end{itemize}
-\subparagraph{License Complications}
-\begin{itemize}
-    \item License Problems with Ghidra. (severity: high, probability: very low)\\ 
-    \textbf{Mitigations:} No mitigations needed because it's completely Open Source.
-    \item License Problems with IDA. (severity: high, probability: low)\\ 
-    \textbf{Mitigations:} Providing a previously free version
-\end{itemize}
+\begin{table}[]
+    \begin{tabular}{llll}
+      & Name                                                                           & Severity  & Probability \\
+    1 & Finding testing participants                                                   & Medium    & High        \\
+    2 & Being able to create reversable programs with additional difficulties          & Very high & Medium      \\
+    3 & Not enough time for the actual challenges because of too much programming etc. & High      & Low         \\
+    4 & Irreparable corruption of git server.                                          & Very high & Low         \\
+    5 & Lost work due to unpushed work.                                                & Low       & High        \\
+    6 & License problems with used software.                                           & High      & Low        
+    \end{tabular}
+\end{table}
+
+Based on these risks we planned steps to mitigate some of the risks.
+
+\begin{table}[]
+    \begin{tabular}{lllll}
+      & Mitigations                                                               & Actions taken                                    & New severity & New probability \\
+    1 & Early looking for participants                                            & Immediately looked for people and found some     & -            & Low             \\
+    2 & Having someone with good knowledge available                              & Ivan assured that we can always reach out to him & -            & Low             \\
+    3 & Creating the challenges in chronological order and in a iterating fashion &                                                  & -            & Very Low        \\
+    4 & Weekly off-site git server backups                                        & Repository mirrored to GitHub                    & Low          & -               \\
+    5 & Frequent reminders to push changes                                        &                                                  & -            & Low             \\
+    6 & Trying to use opensource or public programs                               &                                                  & -            & Low            
+    \end{tabular}
+\end{table}
