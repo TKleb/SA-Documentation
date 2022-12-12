@@ -1,7 +1,7 @@
 \chapter{Technical Report}
 \section{Introduction}
 \subsection{Problem}
-The subject of Cyber Security is constantly growing in importance for the computer scientist in general. The demand for experts with broad knowledge regarding current problems and malware and cyber security analysts is ever growing \cite{cybercrime-mag} The Ostschweizer Fachhochschule has recognized this demand and has added more and more Lectures for the Cyber Security interested students \cite{ost-cybersec}. One important aspect is still missing in the curriculum: Reverse Engineering.
+The subject of Cyber Security is constantly growing in importance for the computer scientist in general. The demand for cyber security experts with broad knowledge regarding current problems and malware is ever growing \cite{cybercrime-mag} The Ostschweizer Fachhochschule has recognized this demand and has added more and more Lectures for the Cyber Security interested students \cite{ost-cybersec}. One important aspect is still missing in the curriculum: Reverse Engineering.
 
 \subsection{Similar Work}
 To this date there is no work done regarding this subject in past projects. In the past, students have created different labs for the OST but none for Reverse Engineering. The infrastructure which is used for this project is already existing and established in the OST lectures. Hacking-Lab as the platform is known by the targeted student group and teachers alike. 
@@ -10,27 +10,30 @@ To this date there is no work done regarding this subject in past projects. In t
 The goal for this project has multiple facets:
 \begin{itemize}
     \item The creation of different labs to show the students of the OST the aspects of Reverse Engineering
-    \item The students should have objectives:
+    \item The students should have the following learning objectives:
     \begin{itemize}
-        \item first
-        \item second
+        \item Gain an understanding of what Reverse Engineering is and what it can be used for
+        \item Know the basic handling of debuggers and dissasemblers
+        \item Understand a binary programs control flow using static debugging
+        \item Understand a binary programs control flow using dynamic debugging
+        \item Be able to locate and exploit simple security flaws in a binary program.
     \end{itemize}
 \end{itemize}
 
 \subsection{Product}
-Not every student uses the same environment with different configurations which is why Hacking-Lab as a tool was chosen as platform, which even allows the hosting of docker run files. In addition to its hosting potential it is also known through its use in the different preceeding security lectures. It allows for a rather simple setup of Labs using Markdown files as structure and Docker for hosting files which need to be accessed.
+Since every student uses his own machine with his own configurations, Hacking-Lab as a platform with its LiveCD was chosen as foundation. This allows a simple, operating system independent approach to all excercises thanks to its webinterface and docker hosting capabilities. 
 
 \section{Requirements for the Labs}
 
 \subsection{Overview}
-
+This chapter lists the different requirements we have defined in order to successfully create and solve the Reverse Engineering labs.
 \subsection{Requirements}
 \textbf{Language} \\
 The labs and their solutions will be written in english to guarantee each student can understand it. \\[0.5cm]
 \textbf{Targeted Group of Students} \\
-The product of this project is aimed at students in the third year (fifth semester) or higher because it is an in depths look at a certain cyber security subject. Because of this, students should have visited the mandatory subjects Cyber Security to have basic information. The more security lectures a student has visited and finished, the better. \\[0.5cm]
+The product of this project is aimed at students in their third year (fifth semester) or higher because it is an in depths look at a certain cyber security subject. Students taking this course should have visited the mandatory subject Cyber Security to have basic information and maybe even Secure Software for a more advanced knowledge of some exploitations. A rule of thumb is the more security lectures a student has visited and finished, the better. \\[0.5cm]
 \textbf{Timerequirements} \\
-Each of the labs has a different time requirement for the students. The Labs goals should be achieveable in a exercise duration, which is about 45min to 1 hour. \\[0.5cm]
+Each of the labs has a different time requirement for the students. One lab should be solvable in an hour or less.  \\[0.5cm]
 \textbf{Grading} \\
 Depending on the lab, a student has to hand-in a flag, a writeup or a solved multiple choice. These will be checked by the teacher or an automated system. \\[0.5cm]
 
