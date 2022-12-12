@@ -3,18 +3,17 @@
 \subsubsection*{Content}
 This Introduction is used to explain the basic functionalities of the tool used in some of the labs. In this case GDB (GNU Debugger).
 \subsubsection*{Choice of Topic}
-The solutions and tipps in the labs are given via screenshots or explanations. If a student wants to use a different tool he / she is free to do so. It is important that the tools used in the example solutions are known to the students. This makes it easier for them to understand each step and, if they are stuck at any point, follow the intructions on how to solve it. 
+The solutions and tips in the labs are given via screenshots or explanations. If a student wants to use a different tool he / she is free to do so. It is important that the tools used in the example solutions are known to the students. This makes it easier for them to understand each step and, if they are stuck at any point, follow the intructions on how to solve it. 
 \subsubsection*{Objectives}
 \begin{itemize}
-    \item Learn about GDB and how to use the different commands availabale
+    \item Learn about GDB and how to use the different commands available
 \end{itemize}
 \subsubsection*{Grading}
 The Labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
 
-
 \subsection{Tools Introduction: x64dbg}
 \subsubsection*{Content}
-Because most students have probably never touched a dynamic debugger on Windows before, this labe will help getting their feet wet with one of the most widely used ones by professionals.
+Because most students have probably never touched a debugger on Windows before, this lab will help getting their feet wet with one of the most widely used ones by professionals.
 This lab also acts as the basis for the upcoming labs where x64dbg will be used.
 \subsubsection*{Choice of Topic}
 Students working with Windows should also be given the opportunity to use a debugger. This lab will guide them through the GUI of the program and explain the basic functionality of what is coming up in future labs.
@@ -26,12 +25,11 @@ Students working with Windows should also be given the opportunity to use a debu
 \subsubsection*{Grading}
 The introduction labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
 
-
 \subsection{Tools Introduction: IDA Freeware}
 \subsubsection*{Content}
 This introduction explains all the relevant functionalities of IDA and how to install it.
 \subsubsection*{Choice of Topic}
-Students need this software (or a similiar one) to be able to solve our challenges.
+Some of the Reverse Engineers most powerful tools are disassemblers. We purposely chose IDA Freeware over Ghidra for the beginning. This prevents the students from just generating pseudo code instead of actually reading and understanding the assembly instructions in later labs. Because of this, the solutions of future labs are presented using IDA Freeware.
 \subsubsection*{Objectives}
 \begin{itemize}
     \item Install IDA Free and get a brief overview
@@ -57,8 +55,9 @@ This lab will not be graded since it is meant to help the students in later labs
 
 \subsection{Lab 2: Static Debugging}
 \subsubsection*{Content}
-In this lab the student will learn how to use IDA Freeware to statically reverse a given binary. The goal is to find the main function of the both a normal binary and one with the symbols stripped. \\
-This will confront the student with a problem that has to be solved and to do that the student has to understand the inner workings of the binary by reading the assembly code and not just relying on the GUI of the decompiling program.
+In this lab the student will learn how to use IDA Freeware to statically reverse a given binary. The goal is to find the main function in a binary with and one without symbols. \\
+This will show the student that seemingly simple things such as finding the main function can be a real problem if you have insufficient knowledge of the inner workings of a binary and the automatic detection of IDA fails.
+
 \subsubsection*{Choice of Topic}
 Program execution starts from the main() function which is why it is an important skill of a reverse engineer to find it and start understanding the rest of the binary from there on.
 \subsubsection*{Objectives}
@@ -72,8 +71,8 @@ The student has to inspect the main functions and find a flag in both of them. T
 
 \subsection{Lab 3: Dynamic Debugging}
 \subsubsection*{Content}
-In this lab the student will learn how to use GDB and x64dbg to dynamically reverse a given binary. In a first step the lab explains how to dynamically debug the binary given in Lab 3 and then, in a second step, the student will be presented with a new binary conataining a flag. \\
-The goal of this lab is to show the student how this skill is used and then have him do it on his own to solidify the steps he has compleated before.
+In this lab the student will learn how to use GDB and x64dbg to dynamically reverse a given binary. In a first step the lab explains how to dynamically debug the binary given in lab 2 and then, in a second step, the student will be presented with a new binary containing a flag. \\
+The goal of this lab is to show the student how this skill is used and then have him do it on his own to solidify the steps he has completed before.
 \subsubsection*{Choice of Topic}
 Next to static debugging, dynamic debugging is used in a wide range of reverse engineering. Because of this it is important to have a student go through the steps and explain how it is done. 
 \subsubsection*{Objectives}
@@ -88,21 +87,21 @@ The student has to use the newly aquired skills to find the flag in a new binary
 
 \subsection{Lab 4: First Reversing Attempts}
 \subsubsection*{Content}
-In this lab the student will deepen their knowledge of reversing binaries to find out how they work. This challenge contains 2 binaries in which you have a requirement which has to be met to recieve the flag.
+In this lab the student will deepen his knowledge of reversing binaries to find out how they work. This challenge contains two binaries having different requirements that have to be met in order for the student to receive the flags.
 \subsubsection*{Choice of Topic}
-It is important to test the understanding of the programs used in an environment in which there is no step for step guide.
+It is important to give the students simple examples where they can play around and learn by doing without providing a step by step guide.
 \subsubsection*{Objectives}
 \begin{itemize}
     \item Use static or dynamic debugging to find the requirements of the programs
     \item Find out how program arguments are handled in assembly
 \end{itemize}
 \subsubsection*{Grading}
-The student has to solve both binaries to get a flag
+The student has to solve both binaries to get a flag.
 
 
 \subsection{Lab 5: Remote Login}
 \subsubsection*{Content}
-This lab dives deeper into the reverse engineering rabbit hole and introduces a new concept. The student first starts a docker container off a provided ressource.
+This lab dives deeper into the reverse engineering rabbit hole and introduces a new concept. The student first starts a docker container off a provided resource.
 This docker container exposes a webserver and a port where an application runs. The application running on the server can be downloaded from the servers website by the student. \\
 The student then has to combine dynamic and static reverse engineering to figure out the password in order to log into the server and expose the flag.
 \subsubsection*{Choice of Topic}
@@ -119,21 +118,21 @@ The student has to find out the flag and submit a small writeup to answer the se
 
 \subsection{Lab 6: Pwntools - Introduction}
 \subsubsection*{Content}
-In this lab the student has a first introduction into the pwntool module of python. The student first has to start a docker conatiner from the provided ressrouce. This docker exposes both a webserver and a port where the application is running on. The student downloads the compiled application to analyze it and search for a weakness to exploit. This weakness can then be exploited through the use of pwntools. Since this is a first introduction, the whole process of creating the script is guided as a walkthrough.
+In this lab the student has a first introduction into the pwntool module of python. The student first has to start a docker conatiner from the provided resource. This docker exposes both a webserver and a port where the application is running on. The student then downloads the compiled application to analyze it and search for a weakness to exploit. This weakness can then be exploited through the use of pwntools. Since this is a first introduction, the whole process of creating the script is guided as a walkthrough.
 \subsubsection*{Choice of Topic}
-Pwntools is an important module to learn for exploiting. Reverse engineering in general is used as a means to find vulnerabilities to exploit, which means it is important for a student to not only know how to find the weakness but also how to exploit it.
+Pwntools is an important module to learn for exploiting. Reverse engineering in general is widely used to find vulnerabilities to exploit, which means it is important for a student to not only know how to find the weakness but also how to exploit it.
 \subsubsection*{Objectives}
 \begin{itemize}
-    \item Use aquired skills to find vulnerability in binary
+    \item Use acquired skills to find vulnerability in binary
     \item Create a pwntools script to exploit that vulnerabilty
 \end{itemize}
 \subsubsection*{Grading}
-The grading is done by sending in the printed out flag when the script is run on the exposed port.
+The grading is done by sending in the printed out flag when the script is run on the exposed port and a writeup answering the provided security questions.
 
 
 \subsection{Lab 7: Crypto Lab - AES ECB}
 \subsubsection*{Content}
-The student is presented a docker container which runs a webserver and exposes a port on which the script is running which the student has to crack. The student first inspects and analyzes the script itself and then follows a walkthrough on how to write a simple script which exploits a common vulnerability in AES ECB mode. 
+The student is presented a docker container which runs a webserver and exposes a port on which the script for the student to crack is running. The student first inspects and analyzes the script itself and then follows a walkthrough on how to write a simple script which exploits a common vulnerability in AES ECB mode. 
 \subsubsection*{Choice of Topic}
 Encryption is a widely used form of obfuscation. Because of this it is important as a cyber security student to be informed about certain weaknesses these ciphers have and how to exploit them if needed. 
 \subsubsection*{Objectives}
@@ -143,14 +142,15 @@ Encryption is a widely used form of obfuscation. Because of this it is important
     \item Create a pwntools script to crack the encryption
 \end{itemize}
 \subsubsection*{Grading}
-The grading is done by sending in the printed out flag when the script is run on the exposed port.
+The grading is done by sending in the printed out flag when the script is run on the exposed port in combination with a writeup answering the provided security questions.
 
 
 \subsection{Lab 8: Patching Lab}
 \subsubsection*{Content}
-The student is presented a binary which doesn't output correctly. The student is tasked to find the location to patch and fix it. To check if it now works the student uploads it to the in docker running webserver and interacts with it. There are three options: Patch, which updates the running file ; Test, which runs the file and gives the student the output of the docker ; Reset, which resets the the file to restart the lab. 
+The student is presented a binary which does not operate correctly. The student is tasked to find the location to patch and fix it. In order to check the patch generated by the user, the provided docker container starts up a webserver where the student can upload the patch file. The webserver then tries to apply the patch to a local copy of the binary and checks if the bug is fixed. If fixed, the webserver shows the flag to the student. If not fixed, the student has the possibility to reset the binary and try again.
+
 \subsubsection*{Choice of Topic}
-For a Reverse Engineer it is important to have the knowledge on how to find errors and how to fix them. This lab shows the student how to find errors, change them and patch it into the old file.
+Reverse engineering also comes in handy when encountering bugs in software where the source code is unreachable. Therefore it is important to locate found bugs in an executable and know how to apply patches.
 \subsubsection*{Objectives}
 \begin{itemize}
     \item Find the mistake of the binary
