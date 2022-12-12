@@ -1,7 +1,7 @@
 # Meeting 01.12
 
 Start 10:00\
-Ende 
+Ende 11:23
 
 **Nächstes Meeting**
 13.12.2022 - 13:00 - 14:00
