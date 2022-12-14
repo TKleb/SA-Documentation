@@ -9,6 +9,7 @@
 \usepackage[utf8]{inputenc}
 % For coloured text and backgrounds
 \usepackage[table, xcdraw]{xcolor}
+
 % To create compact lists
 \usepackage{paralist}
 % To get current date and time
@@ -29,6 +30,11 @@
     marginparwidth={0cm},
     headheight={15pt}
 }
+% Glossary
+\usepackage{glossaries}
+\makeglossaries
+
+
 % Place figures where they are supposed to be placed
 \usepackage{float}
 
@@ -45,8 +51,6 @@
 % Import bibliography file
 \addbibresource{../out/references.bib}
 
-\renewcommand{\listfigurename}{\section{Illustration Directory}}
-\renewcommand{\listtablename}{\section{Table Directory}}
 
 % To allow multiple columns in itemize
 \usepackage{multicol}
@@ -73,7 +77,6 @@
 % Header and Footer Styling
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
 \fancyhead[L]{\leftmark}
 \fancyhead[R]{G.Nenz, R. Mueller, T.Kleb}
 \fancyfoot[C]{\thepage}
@@ -106,7 +109,6 @@
 \include{04_Project-Documentation/project-documentation.tex}
 
 \include{05_Meetings/meetings.tex}
-
 
 \backmatter
 
