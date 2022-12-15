@@ -2,10 +2,10 @@
 % --------------------------------------%
 \section{Project Plan}
 \subsection{Project Overview}
-The goal of this project is to create and organize a lab, which shows and explains future students of the Ostschweizer Fachhochschule (OST) how reverse engineering is performed and which tactics are used to get information out of a program. To accomplish this task, the lab will have several exercises organized in the different domains. These exercises will be accessible through the Hacking-Lab hosted on the OST server. 
+The goal of this project is to create and organize a lab, which shows and explains future students of the Ostschweizer Fachhochschule (OST) how reverse engineering is performed and which tactics are used to get information out of a program. To accomplish this task, the lab will have several exercises organized in the different domains. These exercises will be accessible through the Hacking-Lab website. 
 
 \subsubsection*{Hand-In}
-The finished Report will be handed in according to the rules set by the "Studiengangsleitung Informatik" and the supervisor:
+The finished report will be handed in according to the rules set by the "Studiengangsleitung Informatik" and the supervisor:
 \begin{itemize}
     \item The PDF version will be sent to the advisor and to the OST archive.
     \item The printed version will be handed in to the supervisor for reading and grading.
@@ -38,30 +38,32 @@ Since the module has a total ECTS of 8 each of the students has to work around 2
 \subsubsection*{Planning and Project Management}
 In the past modules Software Engineering Practices 1 and 2 (SEP 1 + 2) we were introduced to different ways to plan and organize a project. The main tools we learned, RUP (Rational Unified Process) and Scrum, are mainly used in software development but can be adapted to other projects aswell. They both use different aspects of time management and organisation which is why we intend to apply them to our project. \\
 We use RUP to section our project into Inception, where we get a first insight into the project and how we want it to resolve; Elaboration, to plan our project, define the workload-distribution and setting up first concepts of the finished labs; The construction phase is mainly used to plan, build and test the labs while the last phase, the transition phase, is used as buffer and to finish our product. \\ 
-To make sure everything works as planned we use Scrum with its Sprints to setup Milestones and Tasks which help structurize the development. 
+To make sure everything works as planned we use Scrum with its sprints to setup milestones and tasks which help structurize the development. 
 
 \subsection{Organisation}
 
 \subsubsection*{Participants}
-The "Studienarbeit"-Team consists of three students: Gianluca Nenz, Ronny Muel\-ler and Thomas Kleb. Work on the project and documentation will be evenly distributed between these three participants. Bigger decisions are made as a team in either the meetings with or without the advisor (the advisor will be notified on any change made).
+The "Studienarbeit"-Team consists of three students: Gianluca Nenz, Ronny Muel\-ler and Thomas Kleb. The work on the project and documentation will be evenly distributed between these three participants. Bigger decisions are made as a team in either the meetings with or without the advisor (the advisor will be notified on any change made).
 
 \subsubsection*{Advisor}
 The teams advisor for the "Studienarbeit" is Ivan Buetler who is teaching cyber security modules at the OST.
 
 \subsubsection*{Division of Labor}
-The project has multiple facets that need to be taken care of. This is why the team has decided to distributed the work load between the three. This doesn't mean that the work is done by only the chosen student but rather that he is the one responsible that it works as planned.
+The project has multiple facets that need to be taken care of. This is why the team has decided to distribute the work load between the three. This doesn't mean that the work is done by only the chosen student but rather that he is the one responsible that it works as planned.
 \begin{table}[H]
     \begin{tabular}[t]{||p{4cm}||}
         \hline
         Gianluca Nenz \\
         \hline\hline
-        Meetings \\ 
+        Sprint Meetings \\ 
         \hline
-        Lab 4: Intro \#3 \\
+        Lab 3: x64dbg \\
         \hline
-        Lab 6: Remote Login \\ 
+        Lab 4: ASM-Refresher \\ 
         \hline
-        Work 4\\[1ex] 
+        Lab 6: Dynamic-debug\\
+        \hline
+        Lab 8: UN-PW\\[1ex] 
         \hline
     \end{tabular}
     \hfill
@@ -69,13 +71,15 @@ The project has multiple facets that need to be taken care of. This is why the t
         \hline
         Ronny Mueller \\
         \hline\hline
-        Lab 2: Intro \#1 \\ 
+        Meeting Notes \\
         \hline
-        Lab 3: Intro \#2 \\
+        Lab 1: IDA \\ 
         \hline
-        Lab 5: RE Attempts \\ 
+        Lab 5: Static-debug \\
         \hline
-        Work 4\\[1ex] 
+        Lab 7: First Reversing Attempts \\ 
+        \hline
+        Lab 11: Patching\\[1ex] 
         \hline
     \end{tabular}
     \hfill
@@ -83,13 +87,15 @@ The project has multiple facets that need to be taken care of. This is why the t
         \hline
         Thomas Kleb \\
         \hline\hline
-        Protocols \\ 
+        Testing \\ 
         \hline
         Documentation \\
         \hline
-        Lab 1: Refresher \\ 
+        Lab 2: GDB \\ 
         \hline
-        Lab 7: Pwntools\\[1ex] 
+        Lab 9: Pwntools\\
+        \hline
+        Lab 10: AES\\[1ex] 
         \hline
     \end{tabular}
     \caption{Work Distribution per Student}
@@ -101,7 +107,7 @@ The project has multiple facets that need to be taken care of. This is why the t
 \subsubsection*{Phases and Iterations}
 The project is comprised of the four steps of RUP. Each of those phases has multiple iterations which create the different sprints for the project. The meetings with the advisor will be on thursdays while the team meetings will be held tuesdays. Each iteration / sprint will be of a seven day length.
 
-\noindent We started the "Studienarbeit" before we began with the regular school. In the week before we each made research and plans about the comming project. After having a talk with the advisor it was decided to first find out the level of knowledge each student has to make it easier for the advisor to plan.
+\noindent We started the "Studienarbeit" before we began with the regular school. In the week before we each made research and plans about the upcoming project. After having a talk with the advisor it was decided to first find out the level of knowledge each student has to allow easier planning for the advisor.
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{0.12\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.46\linewidth}|}
@@ -110,7 +116,7 @@ The project is comprised of the four steps of RUP. Each of those phases has mult
         \hline \hline
         Iteration & Start & End & Description \\
         \hline \hline
-        0 & 12.09.2022 & 18.09.2022 & Collection of Ideas and planning first meeting\\
+        0 & 12.09.2022 & 18.09.2022 & Collection of ideas and planning first meeting\\
         \hline
         1 & 19.09.2022 & 25.09.2022 & First meeting and handout of exercises to assess the knowledge of the students \\
         \hline
@@ -130,11 +136,11 @@ The project is comprised of the four steps of RUP. Each of those phases has mult
         \hline \hline
         Iteration & Start & End & Description \\
         \hline \hline
-        3 & 03.10.2022 & 09.10.2022 &  First big meeting with advisor; Creating project plan and risk analysis.\\
+        3 & 03.10.2022 & 09.10.2022 & First big meeting with advisor; Creating project plan and risk analysis.\\
         \hline
-        4 & 10.10.2022 & 13.10.2022 & Project Plan and Documentation is set; Problem Domains and Learningconcepts are defined \\
+        4 & 10.10.2022 & 13.10.2022 & Project plan and documentation is set; Problem domains and learn concepts are defined \\
         \hline
-        5 & 14.10.2022 & 25.10.2022 & Lab Conepts are defined \\
+        5 & 14.10.2022 & 25.10.2022 & Lab concepts are defined \\
         \hline
     \end{tabular}
     \caption{RUP: Elaboration Phase Planning}
@@ -150,24 +156,24 @@ The project is comprised of the four steps of RUP. Each of those phases has mult
         \hline \hline
         Iteration & Start & End & Description \\
         \hline \hline
-        6 & 21.10.2022 & 01.11.2022 & POC for Lab 2 + 3; started testing \\
+        6 & 21.10.2022 & 01.11.2022 & POC for static and dynamic challenge; started testing \\
         \hline
-        7 & 01.11.2022 & 08.11.2022 & Lab 2 + 3 finished; POC Lab 4 + 5 with testing \\
+        7 & 01.11.2022 & 08.11.2022 & Lab static and dynamic finished; POC First RE Attempts and UN-PW with testing \\
         \hline
-        8 & 08.11.2022 & 15.11.2022 & Finishing Lab 4 + 5; POC Lab 6 \\
+        8 & 08.11.2022 & 15.11.2022 & Finishing lab UN-PW and RE Attempts; POC Pwntool lab \\
         \hline
-        9 & 15.11.2022 & 22.11.2022 & Lab 6 finished with testing \\
+        9 & 15.11.2022 & 22.11.2022 & Introduction labs, AES and testing \\
         \hline
-        10 & 22.11.2022 & 29.11.2022 & POC Lab 1 + 2 \\
+        10 & 22.11.2022 & 29.11.2022 & POC patching lab and assembly lab \\
         \hline
-        11 & 29.11.2022 & 06.12.2022 & Testing of all Labs finished; Lab 1 + 2 finished \\
+        11 & 29.11.2022 & 06.12.2022 & Internal testing of all labs finished; all labs complete\\
         \hline
     \end{tabular}
     \caption{RUP: Construction Phase Planning}
     \label{construction_table}
 \end{table}
 
-\noindent To make sure enough time is planned a buffer week was added to the transition phase. This phase is also mainly used to finish up the documentation and implement the different labs to Hacking Lab. The last week is used to clean up and hand in the documentation and abstract to both the OST and the advisor.
+\noindent To make sure enough time is planned a buffer week was added to the transition phase. This phase is also mainly used to finish up the documentation and implement the different challenges to Hacking Lab. The last week is used to clean up and hand in the documentation and abstract to both the OST and the advisor.
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{0.12\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.46\linewidth}|}
@@ -176,11 +182,11 @@ The project is comprised of the four steps of RUP. Each of those phases has mult
         \hline \hline
         Iteration & Start & End & Description \\
         \hline \hline
-        12 & 06.12.2022 & 13.12.2022 & Buffer \\
+        12 & 06.12.2022 & 13.12.2022 & Documentation completion \\
         \hline
-        13 & 13.12.2022 & 20.12.2022 & Finalizing Documentation \\
+        13 & 13.12.2022 & 20.12.2022 & Finalizing documentation \\
         \hline
-        14 & 20.12.2022 & 23.12.2022 & Preparing for Hand-In \\
+        14 & 20.12.2022 & 23.12.2022 & Preparing for hand-In \\
         \hline
     \end{tabular}
     \caption{RUP: Transition Phase Planning}
@@ -196,9 +202,9 @@ To guarantee the success of the project milestones were defined with a deadline.
         \hline
         Milestones & Deadline & Description \\
         \hline \hline
-        M1 - Solving RE Exercises & 05.10.2022 & The Team solves the given exercises to find the level of RE knowledge. \\
+        M1 - Solving RE Exercises & 05.10.2022 & The Team tries to solve the given exercises to find the level of RE knowledge. \\
         \hline
-        M2 - Defining Problem Domains and Learnconcepts& 13.10.2022 & Problem Domains are defined, first Lernconcepts are planned \\
+        M2 - Defining problem domains and learn concepts& 13.10.2022 & Problem domains are defined, first learn concepts are planned \\
         \hline
         M3 - Lab Concepts & 25.10.2022 & Lab Concepts are defined to start working on the construction. \\
         \hline
@@ -216,7 +222,7 @@ For time tracking the team has decided on using a third party application named 
 \begin{itemize}
     \item Documentation: Working on the documentation
     \item GitLab: Maintaining the infrastructure of the repositories
-    \item Meetings: Sprint- and Advisormeetings
+    \item Meetings: Sprint- and advisormeetings
     \item Preparation: Research before the start of the project
     \item RE-Labs: Creating the different labs
     \item Research: Researching for the labs
@@ -234,20 +240,16 @@ The issue tracking is done on GitLabs own interface to have as few difficulties 
   \end{figure}
 
 \subsubsection*{Meetings}
-The team has meetings each tuesday to elaborate problems and check up on the progress. This meetings are also used to distributed the work load and the different parts of the sprint. \\
+The team has meetings each tuesday to elaborate problems and check up on the progress. These meetings are also used to distribute the work load. \\
 On Thursdays the team meets the advisor Ivan Buetler to inform him on the progress done and the problems that came up. These meetings have different time schedules to fit everyones calender. \\
 Each meeting will be documented and uploaded to the GIT repository. After each meeting the participants should know what to do and how to contact each other if any problems arise.
 
 %\subsubsection*{CI/CD}
 
 \subsubsection*{Projectmanagment}
-The whole project will use a GitLab repository. To make sure no confusion happens a multirepo principle is used where one repository is for the documentation and protocols only and other are for code, information gathered, etc. Each student works on a branch and before pushing to the main branch has another student look into the code / text written. 
+The whole project will use a GitLab repository. To make sure no confusion happens a multirepo principle is used where one repository is only for the documentation and protocols and the other one is for code, information gathered, etc. Each student works on a branch and creates a merge request where the other students check the proposed changes for errors and when nothing is found, they merge the changes. 
 
 \input{04_Project-Documentation/testing.tex}
-
-% --------------------------------------%
-\section{Risk Analysis}
-\input{04_Project-Documentation/risks.tex}
 
 % --------------------------------------%
 \section{Project Monitoring}
