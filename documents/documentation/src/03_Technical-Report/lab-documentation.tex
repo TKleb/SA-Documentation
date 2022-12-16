@@ -1,22 +1,22 @@
 % ------------------------------------------ INTRODUCTIONS ------------------------------------------ %
 \subsection{Tools Introduction: GDB}
 \subsubsection*{Content}
-This Introduction is used to explain the basic functionalities of the tool used in some of the labs. In this case GDB (GNU Debugger).
+This Introduction is used to explain the basic functionalities of the tool used in some of the labs. In this case \acrfull{gdb}.
 \subsubsection*{Choice of Topic}
 The solutions and tips in the labs are given via screenshots or explanations. If a student wants to use a different tool he / she is free to do so. It is important that the tools used in the example solutions are known to the students. This makes it easier for them to understand each step and, if they are stuck at any point, follow the intructions on how to solve it. 
 \subsubsection*{Objectives}
 \begin{itemize}
-    \item Learn about GDB and how to use the different commands available
+    \item Learn about \acrshort{gdb} and how to use the different commands available
 \end{itemize}
 \subsubsection*{Grading}
-The Labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
+The labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
 
 \subsection{Tools Introduction: x64dbg}
 \subsubsection*{Content}
 Because most students have probably never touched a debugger on Windows before, this lab will help getting their feet wet with one of the most widely used ones by professionals.
 This lab also acts as the basis for the upcoming labs where x64dbg will be used.
 \subsubsection*{Choice of Topic}
-Students working with Windows should also be given the opportunity to use a debugger. This lab will guide them through the GUI of the program and explain the basic functionality of what is coming up in future labs.
+Students working with Windows should also be given the opportunity to use a debugger. This lab will guide them through the \acrshort{gui} of the program and explain the basic functionality of what is coming up in future labs.
 \subsubsection*{Objectives}
 \begin{itemize}
     \item Install x64dbg and get a brief overview
@@ -27,13 +27,13 @@ The introduction labs are not graded since they are only used as a lookup. They 
 
 \subsection{Tools Introduction: IDA Freeware}
 \subsubsection*{Content}
-This introduction explains all the relevant functionalities of IDA and how to install it.
+This introduction explains all the relevant functionalities of \acrshort{ida} and how to install it.
 \subsubsection*{Choice of Topic}
-Some of the Reverse Engineers most powerful tools are disassemblers. We purposely chose IDA Freeware over Ghidra for the beginning. This prevents the students from just generating pseudo code instead of actually reading and understanding the assembly instructions in later labs. Because of this, the solutions of future labs are presented using IDA Freeware.
+Some of the Reverse Engineers most powerful tools are disassemblers. We purposely chose \Gls{ida} over \Gls{ghidra} for the beginning. This prevents the students from just generating pseudo code instead of actually reading and understanding the assembly instructions in later labs. Because of this, the solutions of future labs are presented using \Gls{ida}.
 \subsubsection*{Objectives}
 \begin{itemize}
-    \item Install IDA Free and get a brief overview
-    \item Learn to orient yourself in IDA and get ready to use it on a binary
+    \item Install \Gls{ida} and get a brief overview
+    \item Learn to orient yourself in \acrshort{ida} and get ready to use it on a \gls{binary}.
 \end{itemize}
 \subsubsection*{Grading}
 The introduction labs are not graded since they are only used as a lookup. They have a flag to make sure the students have read the tools.
@@ -47,7 +47,7 @@ This lab is designed to be a refresher for those who have not done anything asse
 A reverse engineer has to understand the basic concepts of assembly. Not only when reading through dissasembled code but also later on when automatic pseudo code generation fails.
 \subsubsection*{Objectives}
 \begin{itemize}
-    \item Refresh knowledge about the General-Purpose Registers.
+    \item Refresh knowledge about the general-purpose registers.
     \item Basic understanding of assembly instructions
 \end{itemize}
 \subsubsection*{Grading}
@@ -55,18 +55,18 @@ This lab will not be graded since it is meant to help the students in later labs
 
 \subsection{Lab 2: Static Debugging}
 \subsubsection*{Content}
-In this lab the student will learn how to use IDA Freeware to statically reverse a given binary. The goal is to find the main function in a binary with and one without symbols. \\
-This will show the student that seemingly simple things such as finding the main function can be a real problem if you have insufficient knowledge of the inner workings of a binary and the automatic detection of IDA fails.
+In this lab the student will learn how to use \gls{ida} to statically reverse a given \gls{binary}. The goal is to find the main function in a \gls{binary} with and one without symbols. \\
+This will show the student that seemingly simple things such as finding the main function can be a real problem if you have insufficient knowledge of the inner workings of a \gls{binary} and the automatic detection of \acrshort{ida} fails.
 
 \subsubsection*{Choice of Topic}
 Program execution starts from the main() function which is why it is an important skill of a reverse engineer to find it and start understanding the rest of the binary from there on.
 \subsubsection*{Objectives}
 \begin{itemize}
-    \item Find the main function in a normal binary
-    \item Find the main function in a binary with symbols stripped
+    \item Find the main function in a normal \gls{binary}
+    \item Find the main function in a \gls{binary} with symbols stripped
 \end{itemize}
 \subsubsection*{Grading}
-The student has to inspect the main functions and find a flag in both of them. The final hand-in will be the combined flag.
+The student has to inspect the main functions and find a \gls{flag} in both of them. The final hand-in will be the combined flag.
 
 
 \subsection{Lab 3: Dynamic Debugging}
@@ -82,7 +82,7 @@ Next to static debugging, dynamic debugging is used in a wide range of reverse e
     \item Find the flag of a new binary using dynamic debugging
 \end{itemize}
 \subsubsection*{Grading}
-The student has to use the newly aquired skills to find the flag in a new binary using dynamic debugging skills.
+The student has to use the newly aquired skills to find the \gls{flag} in a new binary using dynamic debugging skills.
 
 
 \subsection{Lab 4: First Reversing Attempts}
@@ -101,7 +101,7 @@ The student has to solve both binaries to get a flag.
 
 \subsection{Lab 5: Remote Login}
 \subsubsection*{Content}
-This lab dives deeper into the reverse engineering rabbit hole and introduces a new concept. The student first starts a docker container off a provided resource.
+This lab dives deeper into the reverse engineering rabbit hole and introduces a new concept. The student first starts a \gls{docker} container off a provided resource.
 This docker container exposes a webserver and a port where an application runs. The application running on the server can be downloaded from the servers website by the student. \\
 The student then has to combine dynamic and static reverse engineering to figure out the password in order to log into the server and expose the flag.
 \subsubsection*{Choice of Topic}
@@ -132,7 +132,7 @@ The grading is done by sending in the printed out flag when the script is run on
 
 \subsection{Lab 7: Crypto Lab - AES ECB}
 \subsubsection*{Content}
-The student is presented a docker container which runs a webserver and exposes a port on which the script for the student to crack is running. The student first inspects and analyzes the script itself and then follows a walkthrough on how to write a simple script which exploits a common vulnerability in AES ECB mode. 
+The student is presented a docker container which runs a webserver and exposes a port on which the script for the student to crack is running. The student first inspects and analyzes the script itself and then follows a walkthrough on how to write a simple script which exploits a common vulnerability in \acrshort{aes} \acrshort{ecb} mode. 
 \subsubsection*{Choice of Topic}
 Encryption is a widely used form of obfuscation. Because of this it is important as a cyber security student to be informed about certain weaknesses these ciphers have and how to exploit them if needed. 
 \subsubsection*{Objectives}
