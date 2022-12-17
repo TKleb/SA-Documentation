@@ -72,13 +72,13 @@
     \par\noindent\makebox[2.5in][l]{#1}      \hfill\makebox[2.0in][l]{Date}%
 }%
 
-\newcommand*\signature[3]{% Name; Department
+\newcommand*\signature[4]{% Name; Department
 \noindent\begin{minipage}{5cm}
     \noindent\vspace{1cm}\par
-    \includegraphics[scale=.75]{#1}
+    \includegraphics[scale=#1]{#2}
     \noindent\rule{5cm}{1pt}\par
-    \noindent\textbf{#2}\par
-    \noindent#3%
+    \noindent\textbf{#3}\par
+    \noindent#4%
 \end{minipage}}
 
 \newcommand\insertdate[1][\today]{\vfill\begin{flushright}#1\end{flushright}}
