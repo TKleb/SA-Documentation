@@ -11,28 +11,74 @@ For this project, the ”Project Management Triangle” is lacking the cost dime
   \label{risk_matrix}
 \end{figure}
 
-\begin{table}[]
-    \begin{tabular}{llll}
-      & Name                                                                           & Severity  & Probability \\
-    1 & Finding testing participants                                                   & Medium    & High        \\
-    2 & Being able to create reversable programs with additional difficulties          & Very high & Medium      \\
-    3 & Not enough time for the actual challenges because of too much programming etc. & High      & Low         \\
-    4 & Irreparable corruption of git server.                                          & Very high & Low         \\
-    5 & Lost work due to unpushed work.                                                & Low       & High        \\
-    6 & License problems with used software.                                           & High      & Low        
-    \end{tabular}
+\begin{table}
+  \centering
+  \caption{Risk 1}
+  \begin{tabular}{ll}
+    Name            & Finding testing participants           \\
+    Severity        & Medium                                 \\
+    Probability     & High                                   \\
+    Mitigations     & Already got confirmation from testers  \\
+    New probability & Low                                   
+  \end{tabular}
 \end{table}
 
-Based on these risks we planned steps to mitigate some of the risks.
+\begin{table}
+  \centering
+  \caption{Risk 2}
+  \begin{tabular}{ll}
+    Name            & Being able to create reversable programs with additional difficulties           \\
+    Severity        & Very High                                 \\
+    Probability     & Medium                                   \\
+    Mitigations     & Assured the advisor is available for consultation  \\
+    New probability & Low                                   
+  \end{tabular}
+\end{table}
 
-\begin{table}[]
-    \begin{tabular}{lllll}
-      & Mitigations                                                               & Actions taken                                    & New severity & New probability \\
-    1 & Early looking for participants                                            & Immediately looked for people and found some     & -            & Low             \\
-    2 & Having someone with good knowledge available                              & Ivan assured that we can always reach out to him & -            & Low             \\
-    3 & Creating the challenges in chronological order and in a iterating fashion &                                                  & -            & Very Low        \\
-    4 & Weekly off-site git server backups                                        & Repository mirrored to GitHub                    & Low          & -               \\
-    5 & Frequent reminders to push changes                                        &                                                  & -            & Low             \\
-    6 & Trying to use opensource or public programs                               &                                                  & -            & Low            
-    \end{tabular}
+\begin{table}
+  \centering
+  \caption{Risk 3}
+  \begin{tabular}{ll}
+    Name            & Not enough time for the actual challenges because of too much programming etc.           \\
+    Severity        & High                                 \\
+    Probability     & Low                                   \\
+    Mitigations     & Creating challenges in chronological order and in a iterating fashion  \\
+    New probability & Very Low                                   
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Risk 4}
+  \begin{tabular}{ll}
+    Name            & Irreparable corruption of git server           \\
+    Severity        & Very High                                 \\
+    Probability     & Low                                   \\
+    Mitigations     & Weekly off-site git server backups  \\
+    New severity    & Low                                   
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Risk 5}
+  \begin{tabular}{ll}
+    Name            & Lost work due to unpushed work           \\
+    Severity        & Low                                 \\
+    Probability     & High                                   \\
+    Mitigations     & Frequent reminders to push changes  \\
+    New probability & Low                                   
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Risk 6}
+  \begin{tabular}{ll}
+    Name            & License problems with used software           \\
+    Severity        & High                                 \\
+    Probability     & Low                                   \\
+    Mitigations     & Trying to use opensource or public software  \\
+    New probability & Low                                   
+  \end{tabular}
 \end{table}
