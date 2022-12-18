@@ -22,6 +22,11 @@
 *.bcf
 *.blg
 *.xml
+*.ist
+*.glsdefs
+*.gls
+*.glo
+*.glg
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
