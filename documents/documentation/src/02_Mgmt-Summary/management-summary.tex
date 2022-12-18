@@ -1,74 +1,29 @@
 \chapter{Management Summary}
 \section{Overview}
 \subsection{What is Reverse Engineering and what is it used for}
-Reverse engineering is the process or method through which a person tries to understand the inner workings of a device, process, system or software to further understand how it accomplishes tasks. In basic terms it is the process of disassembling or dissecting an object to see how it works and find out ways to improve it or exploit a found error. In this project we focus on its aspects in software - and computer engineering. In these sections of science, reverse engineering is used by multiple parties to find mistakes in the software's code or its execution and exploit or fix them. 
+Reverse engineering is the process of analyzing a product or system in order to understand how it works, how it was made, or how it can be improved. It involves taking apart the product or system, examining its components, and understanding how they fit together and interact with each other. \\
+In the context of software, reverse engineering is the process of analyzing a computer program in order to understand how it works and how it was implemented. This may involve disassembling the program, studying its code and documentation to recreate or modify it. Reverse engineering is often used to learn about new technologies, to fix flaws or security vulnerabilities, or to create compatible or competing products. \\
+Reverse engineering can be a challenging and time-consuming process, as it requires a deep understanding of the underlying technologies and systems. It is often used by experts in fields such as computer science, engineering, and security. 
 
 \subsection{Current Situation}
-For a computer scientist it is always useful to have knowledge in cyber security subjects. To accomplish the task of showing the students the world of cyber security, the "Ostschweizer Fachhochschule" (OST) implemented several modules like "Cyber Security", "Secure Software" and the newest one "Cyber Defense". In these modules the professors explained the different acpects using Hacking-Lab as platform for the exercises. The plan is to extend the current state with reverse engineering labs and exercises. The goal of them is to bring the students closer to this subject and explain the fundamentals of reverse engineering.
+For a computer scientist it is always useful to have knowledge in cyber security subjects. To accomplish the task of showing the students the world of cyber security, the Ostschweizer Fachhochschule (OST) implemented several modules like "Cyber Security", "Secure Software" and the newest one "Cyber Defense". In these modules the professors explained the different acpects using Hacking-Lab as platform for the exercises. The plan is to extend the current state with reverse engineering labs and exercises. The goal of them is to bring the students closer to this subject and explain the fundamentals of reverse engineering.
 
-\subsection{Approach}
-To achieve these tasks, new exercises will be added to Hacking-Lab OST environment, which is, as mentioned above, a platform with which students are already accustomed to. These exercises will be added in form of labs for the sutent to go through and will be built with the idea of future additions in mind.
+\section{Approach}
+To achieve these tasks, new exercises will be added to Hacking-Lab OST environment, which is, as mentioned above, a platform with which students are already accustomed to. These exercises will be added in form of labs for the student to go through and will be built with the idea of future additions in mind.
 
 \section{Procedure}
 At the start of the project, the scope was defined, based on which the labs are created. This scope includes the difficulty increase between each lab, the knowhow to be tought to understand the procedure and which tools are used by the student to finish the tasks. In addition to these points a platform on which the student is intended to work on is defined.
-For the students to solve the given tasks they needed a provided infrastructure to follow. Hacking-Lab is used to host the labs and exercises with the additional files needed to work.
+For the students to solve the given tasks they needed a provided infrastructure to follow.
 
-\subsection{Technologies}
-To create each of the labs and their documentation multiple different tools and languages were used [table \ref{tab:tools} and \ref{tab:languages}]. 
-\begin{center}
-    \begin{table}[H]
-        \centering
-        \begin{tabular}{ |p{4.1cm}|p{10cm}| } 
-            \hline
-            \multicolumn{2}{||c||}{\textbf{Tools}} \\
-            \hline
-            \hline
-                VSCode & Each of the students of the project used VSCode for programming and documenting. This allowed for easier settings and more control of the output. \\
-            \hline
-                IDA Freeware & Each of the labs were tested before uploading to Hacking Lab. All of the tests were done in IDA Freeware since this software is used to show the solutions.  \\
-            \hline
-                Ghidra & Each of the labs were tested before uploading to Hacking Lab. Ghidra was used to check the pseudo code. This ensured that students using Ghidra instead of IDA Freeware have a solvable problem aswell and can follow the steps given. \\
-            \hline
-                HL Demo Tenant & 
-                To test all of the labs, the demo tenant of Hacking Lab was used. This allowed for free testing without interfering with the OST tenant.  \\ 
-            \hline
-                Docker & test \\
-            \hline
-                OST Gitlab & 
-                To have versioning of the code OSTs Gitlab was used.  \\ 
-            \hline
-                Clockify & 
-                This software allowed for time management. \\ 
-            \hline
-        \end{tabular}
-        \caption{Overview of all the frameworks and tools used to create the labs.}
-        \label{tab:tools}
-    \end{table}
-\end{center}
-
-\begin{center}
-    \begin{table}[H]
-        \centering
-        \begin{tabular}{ |p{4.1cm}|p{10cm}| } 
-            \hline
-            \multicolumn{2}{||c||}{\textbf{Languages}} \\
-            \hline
-            \hline
-                Assembler & As the base structure of a binary it was taught in multiple Courses before this. In the labs ASM is used to understand the flow of a function and what it does when executed. \\
-            \hline
-                C & All of the binaries were written in C.   \\
-            \hline
-                Python & As an easy to understand language Python is used to write the exploits after analyzing the binaries. \\
-            \hline
-        \end{tabular}
-        \caption{Overview of all the languages used to create the labs.}
-        \label{tab:languages}
-    \end{table}
-\end{center}
+\section{Technologies}
+The labs are created using either the Windows or Linux operating system depending on the software needed. This allows the solving student to have the option to complete each lab using one of the two systems using a virtual machine if needed. 
+All the labs are hosted on a Hacking-Lab tenant provided by the advisor, first on demo to test all the features and how set them up, then on the ost tenant for official use. \\
+Hacking-Lab is a website that offers a range of cybersecurity-related services, including training, simulations, and challenges. It is designed for professionals in the cybersecurity field, as well as students and enthusiasts who are interested in learning about and improving their skills in this area.
+Because of this, the OST uses it to host different exercises teach the fundamentals of cybersecurity to its interested students.
 
 \section{Results}
 \subsection{Goals Achieved}
-The goals were defined by the advisor [section \ref{sec:task}]. It was planned to have 8 - 10 labs finished until the end of week 12. This goal was reached thanks to a strict plan and coordination between the students.
+The goals were defined by the advisor in section \ref{sec:task}. It was planned to have 8 - 10 labs finished until the end of week 12. This goal was reached thanks to a strict plan and coordination between the students.
 
 \subsection{Goals Not Achieved}
 All goals were reached successfully. During the project 11 concepts were defined and uploaded to Hacking Lab. The students decided after talking with the advisor that some labs (VM Technologies, Harder CrackMes and Keygen) were out of scope for this project which is why it was pushed out. 

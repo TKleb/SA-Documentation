@@ -9,6 +9,7 @@
 \usepackage[utf8]{inputenc}
 % For coloured text and backgrounds
 \usepackage[table, xcdraw]{xcolor}
+
 % To create compact lists
 \usepackage{paralist}
 % To get current date and time
@@ -17,6 +18,8 @@
 \usepackage{graphicx}
 % To allow for easier positioning of graphics
 \usepackage[export]{adjustbox}
+% Landscape
+\usepackage{rotating}
 % Nested Lists
 \usepackage{outlines}
 \usepackage{hyperref}
@@ -45,8 +48,6 @@
 % Import bibliography file
 \addbibresource{../out/references.bib}
 
-\renewcommand{\listfigurename}{\section{Illustration Directory}}
-\renewcommand{\listtablename}{\section{Table Directory}}
 
 % To allow multiple columns in itemize
 \usepackage{multicol}
@@ -65,6 +66,17 @@
     \par\noindent\makebox[2.5in][l]{#1}      \hfill\makebox[2.0in][l]{Date}%
 }%
 
+\newcommand*\signature[4]{% Name; Department
+\noindent\begin{minipage}{5cm}
+    \noindent\vspace{1cm}\par
+    \includegraphics[scale=#1]{#2}
+    \noindent\rule{5cm}{1pt}\par
+    \noindent\textbf{#3}\par
+    \noindent#4%
+\end{minipage}}
+
+\newcommand\insertdate[1][\today]{\vfill\begin{flushright}#1\end{flushright}}
+
 \hypersetup{
     pdfauthor = {Gianluca Nenz, Ronny Mueller, Thomas Kleb}
     pdftitle = {Studienarbeit HS22}
@@ -73,7 +85,6 @@
 % Header and Footer Styling
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
 \fancyhead[L]{\leftmark}
 \fancyhead[R]{G.Nenz, R. Mueller, T.Kleb}
 \fancyfoot[C]{\thepage}
@@ -90,7 +101,7 @@
 \include{abstract.tex}
 
 %Sets the Depth of the ToC (set to 2 to allow subsections)
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \tableofcontents
 
 
@@ -106,7 +117,6 @@
 \include{04_Project-Documentation/project-documentation.tex}
 
 \include{05_Meetings/meetings.tex}
-
 
 \backmatter
 
